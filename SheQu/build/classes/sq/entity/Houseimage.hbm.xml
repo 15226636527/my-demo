@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-1-4 14:33:52 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="shequ" dynamic-insert="false" dynamic-update="false" mutable="true" name="sq.entity.Houseimage" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="houseimage">
+        <id name="houseid" type="java.lang.Integer">
+            <column name="houseid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="housename" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housename"/>
+        </property>
+        <property generated="never" lazy="false" name="housenum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housenum"/>
+        </property>
+        <property generated="never" lazy="false" name="houseinfo" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="houseinfo"/>
+        </property>
+        <property generated="never" lazy="false" name="housecreatetime" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housecreatetime"/>
+        </property>
+        <property generated="never" lazy="false" name="housecreateperson" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housecreateperson"/>
+        </property>
+        <property generated="never" lazy="false" name="houseaccess" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="houseaccess"/>
+        </property>
+        <property generated="never" lazy="false" name="housestorage" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="housestorage"/>
+        </property>
+        <property generated="never" lazy="false" name="houseSfid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="house_sfid"/>
+        </property>
+        <property generated="never" lazy="false" name="houseFloorid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="house_floorid"/>
+        </property>
+        <property generated="never" lazy="false" name="houserremark" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="houserremark"/>
+        </property>
+        <property generated="never" lazy="false" name="housea" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housea"/>
+        </property>
+        <property generated="never" lazy="false" name="houseb" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="houseb"/>
+        </property>
+        <property generated="never" lazy="false" name="housec" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housec"/>
+        </property>
+        <property generated="never" lazy="false" name="housed" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housed"/>
+        </property>
+        <property generated="never" lazy="false" name="housee" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housee"/>
+        </property>
+        <property generated="never" lazy="false" name="housef" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="housef"/>
+        </property>
+        <property generated="never" lazy="false" name="houseg" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="houseg"/>
+        </property>
+    </class>
+</hibernate-mapping>

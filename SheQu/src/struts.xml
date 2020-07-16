@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+<constant name="struts.action.extension" value="do"/> 
+	<package name="Community" namespace="/" extends="struts-default">	
+		<!-- 全局结果处理配置 -->
+         <global-results> 			
+         	<result name="error">/adminlogin.jsp</result>
+         	 <result name="Exception">/adminlogin.jsp</result> 
+         </global-results> 
+	
+		<!-- 进入后台首页 -->
+		<action name="goIndex" class="sq.control.CommunityAction" method="goIndex">
+			<result name="success">/WEB-INF/jsp/admIndex.jsp</result>
+		</action>		
+		<!-- 社区-查询全部社区 -->
+		<action name="getAllCom" class="sq.control.CommunityAction" method="getAllCom">
+			<result name="success">/WEB-INF/jsp/allcom.jsp</result>
+		</action>		
+		<!-- 社区-ajax查询全部社区 -->
+		<action name="ajaxGetAllCom" class="sq.control.CommunityAction" method="ajaxGetAllCom">
+		</action>
+		<!-- 社区-添加社区 -->
+		<action name="addCom" class="sq.control.CommunityAction" method="addCom">
+			<result name="success">/WEB-INF/jsp/allcom.jsp</result>
+		</action>
+		<!-- 社区-ajax添加社区 -->
+		<action name="ajaxAddCom" class="sq.control.CommunityAction" method="ajaxAddCom">
+		</action>
+
+		
+		
+		
+		
+	</package>
+	
+</struts>

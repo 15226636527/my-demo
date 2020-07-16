@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-1-4 14:32:30 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="shequ" dynamic-insert="false" dynamic-update="false" mutable="true" name="sq.entity.Community" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="community">
+        <id name="sqid" type="java.lang.Integer">
+            <column name="sqid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="sqnum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqnum"/>
+        </property>
+        <property generated="never" lazy="false" name="sqname" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqname"/>
+        </property>
+        <property generated="never" lazy="false" name="sqaddress" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqaddress"/>
+        </property>
+        <property generated="never" lazy="false" name="sqprovince" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqprovince"/>
+        </property>
+        <property generated="never" lazy="false" name="sqcity" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqcity"/>
+        </property>
+        <property generated="never" lazy="false" name="sqcounty" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqcounty"/>
+        </property>
+        <property generated="never" lazy="false" name="sqarea" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqarea"/>
+        </property>
+        <property generated="never" lazy="false" name="sqvillage" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sqvillage"/>
+        </property>
+        <property generated="never" lazy="false" name="sqremark" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqremark"/>
+        </property>
+        <property generated="never" lazy="false" name="sqa" optimistic-lock="true" type="string" unique="false">
+            <column length="500" name="sqa"/>
+        </property>
+        <property generated="never" lazy="false" name="sqb" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqb"/>
+        </property>
+        <property generated="never" lazy="false" name="sqc" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqc"/>
+        </property>
+        <property generated="never" lazy="false" name="sqd" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqd"/>
+        </property>
+        <property generated="never" lazy="false" name="sde" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sde"/>
+        </property>
+        <property generated="never" lazy="false" name="sqf" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqf"/>
+        </property>
+        <property generated="never" lazy="false" name="sqg" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sqg"/>
+        </property>
+    </class>
+</hibernate-mapping>

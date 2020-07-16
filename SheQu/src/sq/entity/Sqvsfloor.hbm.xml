@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-1-4 14:33:52 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="shequ" dynamic-insert="false" dynamic-update="false" mutable="true" name="sq.entity.Sqvsfloor" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="sqvsfloor">
+        <id name="sfid" type="java.lang.Integer">
+            <column name="sfid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="sfnum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sfnum"/>
+        </property>
+        <property generated="never" lazy="false" name="sfname" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sfname"/>
+        </property>
+        <property generated="never" lazy="false" name="sfSqid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="sf_sqid"/>
+        </property>
+        <property generated="never" lazy="false" name="sfSqname" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sf_sqname"/>
+        </property>
+        <property generated="never" lazy="false" name="sfSqnum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sf_sqnum"/>
+        </property>
+        <property generated="never" lazy="false" name="sfFloorid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="sf_floorid"/>
+        </property>
+        <property generated="never" lazy="false" name="sfFloorname" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sf_floorname"/>
+        </property>
+        <property generated="never" lazy="false" name="sfFloornum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sf_floornum"/>
+        </property>
+        <property generated="never" lazy="false" name="sfcreatetime" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sfcreatetime"/>
+        </property>
+        <property generated="never" lazy="false" name="sfcreateperson" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="sfcreateperson"/>
+        </property>
+        <property generated="never" lazy="false" name="sfshow" optimistic-lock="true" type="string" unique="false">
+            <column length="500" name="sfshow"/>
+        </property>
+        <property generated="never" lazy="false" name="sfremark" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sfremark"/>
+        </property>
+        <property generated="never" lazy="false" name="sfimageaccess" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="sfimageaccess"/>
+        </property>
+        <property generated="never" lazy="false" name="sfimagesave" optimistic-lock="true" type="string" unique="false">
+            <column length="200" name="sfimagesave"/>
+        </property>
+        <property generated="never" lazy="false" name="sfimagename" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sfimagename"/>
+        </property>
+        <property generated="never" lazy="false" name="sfpicid" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="sfpicid"/>
+        </property>
+        <property generated="never" lazy="false" name="sfa" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sfa"/>
+        </property>
+        <property generated="never" lazy="false" name="sfb" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sfb"/>
+        </property>
+        <property generated="never" lazy="false" name="sfc" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="sfc"/>
+        </property>
+    </class>
+</hibernate-mapping>

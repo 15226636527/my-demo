@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-1-4 14:33:52 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="shequ" dynamic-insert="false" dynamic-update="false" mutable="true" name="sq.entity.Manager" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="manager">
+        <id name="managerid" type="java.lang.Integer">
+            <column name="managerid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="account" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="account"/>
+        </property>
+        <property generated="never" lazy="false" name="pws" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="pws"/>
+        </property>
+        <property generated="never" lazy="false" name="managername" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="managername"/>
+        </property>
+        <property generated="never" lazy="false" name="createtime" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="createtime"/>
+        </property>
+        <property generated="never" lazy="false" name="managersex" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="managersex"/>
+        </property>
+        <property generated="never" lazy="false" name="managerage" optimistic-lock="true" type="string" unique="false">
+            <column length="10" name="managerage"/>
+        </property>
+        <property generated="never" lazy="false" name="managernich" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="managernich"/>
+        </property>
+        <property generated="never" lazy="false" name="managerjob" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="managerjob"/>
+        </property>
+        <property generated="never" lazy="false" name="managerphone" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="managerphone"/>
+        </property>
+    </class>
+</hibernate-mapping>

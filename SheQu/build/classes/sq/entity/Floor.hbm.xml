@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2019-1-4 14:33:52 by Hibernate Tools 5.2.3.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="shequ" dynamic-insert="false" dynamic-update="false" mutable="true" name="sq.entity.Floor" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="floor">
+        <id name="floorid" type="java.lang.Integer">
+            <column name="floorid"/>
+            <generator class="identity"/>
+        </id>
+        <property generated="never" lazy="false" name="floornum" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floornum"/>
+        </property>
+        <property generated="never" lazy="false" name="floorname" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floorname"/>
+        </property>
+        <property generated="never" lazy="false" name="floorinfo" optimistic-lock="true" type="string" unique="false">
+            <column length="500" name="floorinfo"/>
+        </property>
+        <property generated="never" lazy="false" name="floorremark" optimistic-lock="true" type="string" unique="false">
+            <column length="100" name="floorremark"/>
+        </property>
+        <property generated="never" lazy="false" name="floora" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floora"/>
+        </property>
+        <property generated="never" lazy="false" name="floorb" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floorb"/>
+        </property>
+        <property generated="never" lazy="false" name="floorc" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floorc"/>
+        </property>
+        <property generated="never" lazy="false" name="floord" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floord"/>
+        </property>
+        <property generated="never" lazy="false" name="floore" optimistic-lock="true" type="string" unique="false">
+            <column length="50" name="floore"/>
+        </property>
+    </class>
+</hibernate-mapping>
